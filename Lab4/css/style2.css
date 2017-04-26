@@ -1,0 +1,37 @@
+.border{
+    border: 1px solid #dddddd;
+    opacity: 0.4;
+}
+.img-responsive:hover{
+    opacity: 1;
+}
+.myActive{
+    opacity: 1;
+    height: 100%;
+    vertical-align: top;
+}
+.row-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+}
+.noLeftPadding{
+    padding-left: 0px;
+}
+.col-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+}
+.gold{
+    color: gold;
+}
+.big{
+    font-size: 20px;
+}
+.big > .glyphicon{
+    padding-right: 5px;
+}
+
+
