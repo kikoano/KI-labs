@@ -1,0 +1,19 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.col-lg-8 h1{
+     color: #337AB9;
+ }
+.title{
+    background-color: #3C3C3C;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px 0px 2px 0px;
+}
+.myRow{
+    padding: 40px;
+    padding-bottom: 8px;
+}

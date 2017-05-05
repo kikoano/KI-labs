@@ -1,0 +1,34 @@
+.here{
+    color: #33CA78;
+    background-color: #333333;
+    padding: 10px;
+    height: 350px;
+}
+
+.nav-sidebar {
+    border-right: 1px solid #ddd;
+}
+.nav-sidebar a {
+    color: #333;
+}
+.nav-sidebar .active a {
+    background-color: #34ca78;
+    color: #fff;
+}
+.nav-sidebar .active a:hover {
+    background-color: #37d980;
+}
+.btn-custom{
+    color: #ffffff;
+    background-color: #34ca78;
+}
+.btn-custom:hover{
+    background-color: #37d980;
+    color: #ffffff;
+}
+.element{
+    border-bottom:1px solid #ddd;
+}
+.element img{
+    margin-right: 10px;
+}
