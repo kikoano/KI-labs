@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+
+        .vcenter {
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .panel-login {
+            border-color: #ccc;
+            -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .panel-login > .panel-heading {
+            color: #00415d;
+            background-color: #fff;
+            border-color: #fff;
+            text-align: center;
+        }
+
+        .panel-login > .panel-heading a {
+            text-decoration: none;
+            color: #666;
+            font-weight: bold;
+            font-size: 15px;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+        }
+
+        .panel-login > .panel-heading a.active {
+            color: #029f5b;
+            font-size: 18px;
+        }
+
+        .panel-login > .panel-heading hr {
+            margin-top: 10px;
+            margin-bottom: 0px;
+            clear: both;
+            border: 0;
+            height: 1px;
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+            background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+            background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+            background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+        }
+
+        .panel-login input[type="text"], .panel-login input[type="email"], .panel-login input[type="password"] {
+            height: 45px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+        }
+
+        .panel-login input:hover,
+        .panel-login input:focus {
+            outline: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border-color: #ccc;
+        }
+
+        .btn-login {
+            background-color: #59B2E0;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+            height: auto;
+            font-weight: normal;
+            padding: 14px 0;
+            text-transform: uppercase;
+            border-color: #59B2E6;
+        }
+
+        .btn-login:hover,
+        .btn-login:focus {
+            color: #fff;
+            background-color: #53A3CD;
+            border-color: #53A3CD;
+        }
+
+        .forgot-password {
+            text-decoration: underline;
+            color: #888;
+        }
+
+        .forgot-password:hover,
+        .forgot-password:focus {
+            text-decoration: underline;
+            color: #666;
+        }
+
+        .btn-register {
+            background-color: #1CB94E;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+            height: auto;
+            font-weight: normal;
+            padding: 14px 0;
+            text-transform: uppercase;
+            border-color: #1CB94A;
+        }
+
+        .btn-register:hover,
+        .btn-register:focus {
+            color: #fff;
+            background-color: #1CA347;
+            border-color: #1CA347;
+        }
+
+        .headingName {
+            margin: 30px 0px 30px 0px;
+        }
+
+        .myList {
+            width: 164px;
+            padding: 0px;
+            height: 100vh;
+            background-color: #F8F8F8;
+        }
+
+        .myNavbar {
+            margin: 0px;
+        }
+
+        .list-group .list-group-item {
+            border: none;
+            border-radius: 0;
+            padding: 0px 0px 10px 0px;
+        }
+
+        .list-group .list-group-item:hover {
+            border-radius: 0;
+            background-color: #E7E7E7;
+        }
+
+        .list-group .active:hover {
+            background-color: #296793;
+        }
+
+        .list-group-item > .badge {
+            margin-top: 1.5em;
+            margin-right: 1em;
+        }
+
+        .navbar-brand {
+            background-color: #EFEFEF !important;;
+        }
+
+        .nav > li:hover {
+            background-color: #E7E7E7;
+        }
+
+        table tr td:nth-child(5) {
+            width: 20px;
+        }
+
+        body.modal-open .supreme-container {
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+        .dropdown-menu{
+            position: static;
+            float: none;
+            width: auto;
+            margin-top: 0;
+            background-color: transparent;
+            border: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .notAvailable{
+            background-color: #CCCCCC !important;;
+        }
+        .list-group a{
+            background-color: #F8F8F8;
+        }
+        .span4 img {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .span4 .img-left {
+            float: left;
+        }
+        .span4 .img-right {
+            float: right;
+        }
+
+    </style>
+    <script>
+        $(function () {
+            $('#login-form-link').click(function (e) {
+                $("#login-form").delay(100).fadeIn(100);
+                $("#register-form").fadeOut(100);
+                $('#register-form-link').removeClass('active');
+                $(this).addClass('active');
+                e.preventDefault();
+            });
+            $('#register-form-link').click(function (e) {
+                $("#register-form").delay(100).fadeIn(100);
+                $("#login-form").fadeOut(100);
+                $('#login-form-link').removeClass('active');
+                $(this).addClass('active');
+                e.preventDefault();
+            });
+            $('#checkAll').click(function () {
+                $('input:checkbox').prop('checked', this.checked);
+            });
+            $('.notAvailable').each(function(index,item){
+                $(this).find("td input").prop("disabled",true);
+            });
+        });
+
+    </script>
+</head>
+<body>
+<nav class=" navbar navbar-default myNavbar supreme-container navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Automatic Libary</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Libary</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid supreme-container">
+    <div class="row">
+        <div class="col-md-3 myList">
+            <div class="list-group">
+                <a class="list-group-item" href="index.html"><i class="glyphicon glyphicon-home btn-lg"></i> My Books<span
+                        class="badge">22</span></a>
+                <a class="list-group-item active" href="books.html"><i class="glyphicon glyphicon-book btn-lg"></i> Books<span
+                        class="badge">864</span></a>
+                <div class="dropdown">
+                    <a class="list-group-item dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-user btn-lg"></i> Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu for">
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">Change User</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="list-inline">
+                        <h4 style="display: inline-block">Tags:</h4>
+                        <li><a href="#">Computers & Technology</a></li>
+                        <li><a href="#">Programming </a></li>
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Textbooks</a></li>
+                    </ul>
+                    <button class="btn btn-default">Back</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-success">Borrow book</button>
+                </div>
+                <br>  <br>  <br>  <br>
+                <div class="span4">
+                    <img class="img-left" src="img/bookCover.jpg" width="200px"/>
+                    <div class="content-heading"><h3>Book name  <small>Autor name</small></h3></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis nunc tortor. Duis efficitur risus sed ultricies posuere. Sed velit ante, dapibus vitae arcu non, molestie pulvinar orci. Fusce in massa gravida, laoreet nisi a, dictum arcu. Nam sed nulla et nulla lobortis lacinia vel vitae mi. Vivamus lacus nisl, malesuada vitae est vel, commodo elementum ligula. Quisque ac elit eu urna hendrerit tristique sit amet nec magna. Praesent fermentum nunc sed ex consequat commodo. Proin fermentum a sem in pharetra. In condimentum pharetra lacus eget lobortis.</p>
+                    <p> Donec nibh erat, faucibus id dictum sit amet, porttitor id erat. Donec accumsan iaculis condimentum. Maecenas nisl arcu, mollis eget ex vitae, sodales blandit justo. Phasellus blandit felis id lorem eleifend sollicitudin. Duis nec quam sed nisi efficitur luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean a tempus nibh. Nullam a turpis nibh. Duis sem ipsum, pretium vel mattis quis, tempus eget erat. Mauris lectus leo, semper tincidunt massa vel, tempus venenatis nisl. Maecenas consequat, est lobortis elementum auctor, nibh lorem ultrices arcu, in suscipit nisl diam in ligula. Ut quis elementum erat.</p>
+                    <p>Maecenas sollicitudin mauris id velit suscipit, nec cursus lorem posuere. Morbi et lectus at nisl lacinia blandit nec in quam. Phasellus sed lacus sed mauris rhoncus lobortis. Nulla imperdiet nunc eu urna placerat, id imperdiet tellus mollis. Cras diam neque, faucibus nec aliquam id, mollis volutpat nibh. Aenean in ante et felis elementum dapibus. Nulla tempor interdum scelerisque.</p>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>

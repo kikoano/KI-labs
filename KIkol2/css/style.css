@@ -1,0 +1,56 @@
+.brand{
+    font-size: 32px;
+}
+.sidebar{
+    top:50px;
+    left: -1px;
+    width: 220px;
+    min-height: 100%;
+    position:fixed;
+}
+.sidebar li a{
+    color: white;
+}
+.sidebar li.active a{
+    background-color: #0f0f0f;
+}
+.sidebar li.active a:hover{
+    background-color: #0f0f0f;
+}
+.sidebar li a:hover{
+    background-color: #0f0f0f;
+}
+.main{
+    margin-left: 220px;
+    margin-top: 80px;
+}
+.inside{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.myPanel{
+    width: 400px;
+}
+.myPanel2{
+    width: 100%;
+}
+.glyphicon-shopping-cart, .glyphicon-fire, .glyphicon-tasks{
+    font-size: 100px;
+}
+.t1{
+    font-size: 50px;
+    float: right;
+}
+.t2{
+    font-size: 30px;
+    position: absolute;
+    bottom: 65px;
+    right: 90px;
+}
+
+.toright{
+    float: right;
+}
+.myText{
+    margin-left: 30px;
+}
